@@ -27,9 +27,11 @@ public class SupermarketArray implements Supermarket{
         System.out.println("############################################");
         if (lastIndex < 0) {
             System.err.println("Lista de Supermecado vazia");
+            System.out.println("############################################");
+            return;
         }
         for (int i = 0; i <= lastIndex; i++) {
-            System.out.print(i + " - " + items[i]);
+            System.out.println(i + " - " + items[i]);
         }
         System.out.println("############################################");
     }
